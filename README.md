@@ -8,6 +8,24 @@
   <p align="center">Nest JS로 API 만들기</p>
 
 ## 배운점
+- `main.ts` : 진입점으로, AppModule(루트 모듈)로 어플리케이션 생성
+  > ```module - 한 가지 역할을 하는 어플리케이션의 단위 ex) users, photos, vieos ... ```
+  
+  </br>
+  
+  ```javascript
+  @Module({
+    imports: [],
+    controllers: [AppController],
+    providers: [AppService],
+  })
+  ```
+  - 컨트롤러 : url을 가져와서 함수 실행
+    - @Get, @Post ... : 라우팅
+
+
+- 데코레이터 : 클래스를 위한 함수 (함수에 기능 추가)
+
 ## Running the app
 
 ```bash
